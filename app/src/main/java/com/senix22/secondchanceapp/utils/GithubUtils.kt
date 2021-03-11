@@ -15,13 +15,12 @@ import retrofit2.Retrofit
 
 
 object GithubUtils {
-    const val clientId = "Iv1.579fd42febefaf65"
-    const val clientSecret = "680cbb713513d806fe83fe305adfb5d00167e674"
-     const val redirectUrl = "gitsecondchance://callback"
-     const val scopes = "repo, user"
-     const val schema = "https"
-     const val githubHost = "github.com"
-
+    const val clientId = "Iv1.2e4d209685a203dd"
+    const val clientSecret = "368775dc94960542e9c8c243a7c80d3d2643b13e"
+    private const val redirectUrl = "secondchance://callback"
+    private const val scopes = "repo, user"
+    private const val schema = "https"
+    private const val githubHost = "github.com"
 
     fun buildAuthGitHubUrl(): Uri {
         return Uri.Builder()
@@ -34,33 +33,11 @@ object GithubUtils {
             .build()
     }
 
-    private val retrofit: Retrofit by lazy {
-        Retrofit.Builder()
-            .client(
-                OkHttpClient().newBuilder()
-                    .addInterceptor(HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY))
-                    .build()
-            )
-            .baseUrl(HttpUrl.Builder().scheme(schema).host(githubHost).build())
-            .build()
-    }
-
-    private  val githubService: GithubAuthService by lazy {
-        retrofit.create(GithubAuthService::class.java)
-    }
-
     fun getCodeFromUri(uri: Uri?): String? {
         uri ?: return null
         if (!uri.toString().startsWith(redirectUrl)) {
             return null
         }
         return uri.getQueryParameter("code")
-    }
-    suspend fun getAccesToken(code: String): AuthToken {
-        return githubService.getAccessToken(clientId, clientSecret, code)
-    }
-
-    suspend fun getUser(token: String): User {
-        return githubService.getUser(token)
     }
 }
