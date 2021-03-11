@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">SecondChanceApp</string>
+    <string name="app_name">Github Client</string>
+    <string name="repositories_title_text">Liked repositories</string>
+    <string name="authorization_title">Authorization</string>
+    <string name="authorization_button_text">Log in</string>
+    <string name="search_hint">Enter user name</string>
+    <string name="unauthorized_error_message">Unauthorized. Error 401</string>
+    <string name="not_found_error_message">Not found. Error 404</string>
+    <string name="forbidden_error_message">Forbidden. Error 403</string>
+    <string name="loading_error_message">loading error</string>
+    <string name="contributors_tab">Pulls</string>
 </resources>

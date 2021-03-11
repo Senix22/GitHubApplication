@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="user_avatar_width">80dp</dimen>
+    <dimen name="user_avatar_height">80dp</dimen>
+    <dimen name="user_name_text_textSize">24sp</dimen>
+    <dimen name="pulls_title_textSize">24sp</dimen>
+    <dimen name="pulls_title_marginTop">32dp</dimen>
+    <dimen name="pulls_recycler_view_marginTop">16dp</dimen>
+    <dimen name="pulls_item_padding">16dp</dimen>
+    <dimen name="pulls_item_name_textSize">24sp</dimen>
+    <dimen name="pulls_item_description_textSize">16sp</dimen>
+    <dimen name="authorization_title_textSize">32sp</dimen>
+    <dimen name="authorization_button_marginTop">32dp</dimen>
+    <dimen name="user_avatar_image_view_margin">16dp</dimen>
+    <dimen name="user_name_text_view_margin">16dp</dimen>
+    <dimen name="issue_author_avatar_width">32dp</dimen>
+    <dimen name="pull_details_name_margin">16dp</dimen>
+    <dimen name="pull_details_name_textSize">24sp</dimen>
+    <dimen name="pull_details_description_margin">16dp</dimen>
+    <dimen name="pull_details_description_textSize">16sp</dimen>
+    <dimen name="pull_details_tab_layout_marginVertical">8dp</dimen>
+    <dimen name="contributors_list_item_padding">16dp</dimen>
+    <dimen name="user_item_avatar_margin">16dp</dimen>
+    <dimen name="user_item_avatar_width">40dp</dimen>
+    <dimen name="user_item_avatar_height">40dp</dimen>
+    <dimen name="user_item_name_margin">16dp</dimen>
+    <dimen name="search_button_width">64dp</dimen>
+    <dimen name="search_button_height">64dp</dimen>
+    <dimen name="search_button_margin">32dp</dimen>
+</resources>
